@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mukama Portfolio</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	 <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Kanit:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Oswald:wght@500;600&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+</head>
+<style>
+	*{
+		font-family: poppins;
+	
+	}
+	body{
+		margin: 0;
+		width: 100%;
+	}
+	#overlay{
+		background-color: #073e3e;
+	
+	}
+	form{
+		max-width: 550px;
+		width: 90%;
+		background:  #11023c;
+		margin: 17vh auto 0 auto;
+		padding: 40px;
+		border-radius: 3px;
+		box-sizing: border-box;
+	}
+	h1{
+		margin: 0;
+		text-align: center;
+	}
+	label{
+		display: block;
+		margin: 20px 0;
+	}
+	input,textarea{
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		outline: none;
+		resize: none;
+		border: none;
+		border-bottom: solid #711313;
+	}
+	input[type="text"]:focus,textarea:focus{
+		border-bottom:1px solid rgb(255,0,106) ;
+	}
+	textarea::-webkit-scrollbar{
+		width: 4px;
+	
+	}
+	textarea::-webkit-scrollbar-thumb{
+		background-color: rgb(255,0,106);
+	}
+	input[type="submit"]{
+		margin-top:30px;
+		width: 90%;
+		max-width: 200px;
+		background: linear-gradien(to right,rgb(255,0,106),rgb(255,67,61));
+		color:white;
+		font-size: 17px;
+		cursor: pointer;
+		border-radius: 3px;
+		background-color: #ff4d05;
+	
+	}
+	.error{
+		border-bottom: 1px solid red;
+		color: red;
+	
+	}
+	#success{
+		color: #28a745;
+	}
+	.text{
+		background-color:#073e3e ;
+		
+	}
+	.form1{
+		width: 100%;
+		right: 300px;
+	}
+	.dive{
+		width: 100%;
+		margin-left: 400px;
+	
+	}
+	.nam,.emay{
+		background-color: #073e3e;
+	}
+	.contact-me{
+	top:400px;
+	left: 400px;
+	}
+</style>
+<body>
+
+	<!----header design--->
+	<header>
+		<a href="#" class="logo">Django Development</a>
+
+		<ul class="navlist">
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</ul>
+
+		<div class="bx bx-menu" id="menu-icon">
+			
+		</div>
+	</header>
+
+	<!----home section design--->
+	<section class="home" id="home">
+		<div class="home-text">
+			<div class="slide">
+				<span class="one">Hello</span>
+				<span class="two">I'm</span>
+			</div>
+			<h1>Mukama Francois</h1>
+			<h3>Django<span> Developer</span></h3>
+			<p>Django Developer with 2+ years experience<br> that attract many managers</p>
+			<div class="button">
+				<a href="#" class="btn">Let's Talk</a>
+				<a href="#" class="btn2"><span></span></a>
+			</div>
+		</div>
+	</section>
+
+	<!----about section design--->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/about.jpg">
+		</div>
+
+		<div class="about-text">
+			<h2>About <span>Me</span></h2>
+			<h4>django Developer</h4>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima hic vel cupiditate, voluptatum error autem saepe est molestiae. Consectetur officia necessitatibus praesentium fugit eum facilis quo error ab ipsa numquam!</p>
+			<a href="#" class="btn">More About</a>
+		</div>
+	</section>
+
+	<!----service section design--->
+	<section class="services" id="services">
+		<div class="main-text">
+			<p>What I am Expert In</p>
+			<h2><span>My</span> Services</h2>
+		</div>
+
+		<div class="services-content">
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-mobile-alt' ></i>
+				</div>
+				<h3>Build website with us</h3>
+				<p>We can help you develop a marketing wesite for your business in short time.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-code-alt' ></i>
+				</div>
+				<h3>Private VPNs</h3>
+				<p>Secure your Network with our private VPNs.So feel free, we are here to secure your network</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-edit-alt' ></i>
+				</div>
+				<h3>Server sides.</h3>
+				<p>We help you manage your server sides of your business. Lorem ipsum dolor sit amet consectetur adipisic</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+		</div>
+	</section>
+
+	<!----service section design--->
+	<section class="services" id="services">
+		<div class="main-text">
+			<p>What I am Expert In</p>
+			<h2><span>My</span> Services</h2>
+		</div>
+
+		<div class="services-content">
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-mobile-alt' ></i>
+				</div>
+				<h3>Build website with us</h3>
+				<p>We can help you develop a marketing wesite for your business in short time.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-code-alt' ></i>
+				</div>
+				<h3>Private VPNs</h3>
+				<p>Secure your Network with our private VPNs.So feel free, we are here to secure your network</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-edit-alt' ></i>
+				</div>
+				<h3>Server sides.</h3>
+				<p>We help you manage your server sides of your business. Lorem ipsum dolor sit amet consectetur adipisic</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+		</div>
+	</section>
+
+	<!----portfolio section design--->
+	<section class="portfolio" id="portfolio">
+		<div class="main-text">
+			<p>Portfolio</p>
+			<h2><span>Latest</span> Project</h2>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="/img/portfolio1.png">
+				<div class="layer">
+					<h5>DJ</h5>
+					<p>Django development</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/im5.png">
+				<div class="layer">
+					<h5>Penetration</h5>
+					<p>Networking and Network security</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/im12.jpg">
+				<div class="layer">
+					<h5>Machine learning</h5>
+					<p>Involves Datascience and Numpy</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/im7.png">
+				<div class="layer">
+					<h5>Artificial Intelligence</h5>
+					<p>see our web3 technologies</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/im8.png">
+				<div class="layer">
+					<h5>javascript</h5>
+					<p>React and Node js</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/im6.png">
+				<div class="layer">
+					<h5>HTML/Css</h5>
+					<p>web development</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!----contact section design--->
+	<section class="contact" id="contact">
+	
+		<div class="dive" id="overlay">
+			<div>
+				<h1 class="contact-me">Contact <span>Me</span></h1>
+				<p>Talk to me at : mk.frmh3@gmail.com</p>
+			</div>
+			<form class="form1" onsubmit="event.preventDefault(); validateForm()">
+				<h1></h1>
+	
+				<label for="name">Name:</label>
+				<input  class="nam" type="text" id="name" placeholder="Your name">
+				<small class="error"></small>
+	
+				<label for="email">Email:</label>
+				<input  class="emay" type="text" id="email" placeholder="Your email">
+				<small class="error"></small>
+	
+				<label for="message">Message:</label>
+				<textarea class="text"  name="" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+				<small class="error"></small>
+	
+				<div class="center"></div>
+				<input type="submit" value="Send Message">
+				<p id="success"></p>
+	
+			</form>
+		</div>
+		<script>
+			// get data
+	const nameInput =document.querySelector("#name");
+	const email =document.querySelector("#email");
+	const message=document.querySelector('#message');
+	const errorNodes= document.querySelectorAll('.error');
+	//validate form
+	function validateForm(){
+		clearMessages();
+		let errorFlag=false;
+		if(nameInput.value.length<1){
+			errorNodes[0].innerText="Name cannot be blank";
+			nameInput.classList.add('error-border');
+			errorFlag=true;
+		}
+		if(!eamilIsValid(email.value)){
+			errorNodes[1].innerText="Invalid email address";
+			email.classList.add('error-border');
+			errorFlag=true;
+		}
+		if(message.value.length<1){
+			errorNodes[2].innerText="Please enter message";
+			message.classList.add('error-border');
+			errorFlag=true;
+	
+		}
+		if(!errorFlag){
+			success.innerText="Done";
+		}
+	
+	}
+	// clear error /sucess messages
+	function clearMessages(){
+		for(let i=0;i<errorNodes.length;i++){
+			errorNodes[i].innerText="";
+		}
+		success.innerText="";
+		nameInput.classList.remove('error-border');
+		email.classList.remove('error-border');
+		message.classList.remove('error-border');
+	}
+	
+	//check if email is valid
+	function eamilIsValid(email){
+		let pattern=/\S+@\S+\.\S+/;
+		return pattern.test(email);
+	
+	}
+	
+		</script>
+	</section>
+
+	<!----end section design--->
+	<section class="end">
+		<div class="last-text">
+			<p>Copyright © 2022-2023 by Mukama Francois All Rights Reserved.</p>
+		</div>
+
+		<div class="top">
+			<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+		</div>
+	</section>
+
+	<!---custom js link--->
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
